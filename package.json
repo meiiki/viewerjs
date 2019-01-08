@@ -1,54 +1,52 @@
 {
-  "name": "viewerjs",
-  "description": "JavaScript image viewer.",
-  "version": "1.3.1",
-  "main": "dist/viewer.common.js",
-  "module": "dist/viewer.esm.js",
-  "unpkg": "dist/viewer.js",
-  "style": "dist/viewer.css",
-  "types": "types/index.d.ts",
-  "repository": "fengyuanchen/viewerjs",
-  "homepage": "https://fengyuanchen.github.io/viewerjs",
-  "license": "MIT",
+  "_args": [
+    [
+      "viewerjs@^1.0.0",
+      "E:\\work\\xhyj\\node_modules\\v-viewer"
+    ]
+  ],
+  "_from": "viewerjs@>=1.0.0 <2.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "viewerjs@1.3.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/viewerjs",
+  "_nodeVersion": "10.9.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/viewerjs_1.3.1_1544342135242_0.4868912908935037"
+  },
+  "_npmUser": {
+    "email": "chenfengyuan@outlook.com",
+    "name": "chenfengyuan"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "viewerjs",
+    "raw": "viewerjs@^1.0.0",
+    "rawSpec": "^1.0.0",
+    "scope": null,
+    "spec": ">=1.0.0 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/v-viewer"
+  ],
+  "_resolved": "https://registry.npmjs.org/viewerjs/-/viewerjs-1.3.1.tgz",
+  "_shasum": "dcb216372f0c405fcab15bc4224b47f4271e592a",
+  "_shrinkwrap": null,
+  "_spec": "viewerjs@^1.0.0",
+  "_where": "E:\\work\\xhyj\\node_modules\\v-viewer",
   "author": {
     "name": "Chen Fengyuan",
     "url": "https://chenfengyuan.com"
   },
-  "files": [
-    "src",
-    "dist",
-    "types"
-  ],
-  "keywords": [
-    "image",
-    "viewer",
-    "viewerjs",
-    "viewer.js",
-    "html",
-    "css",
-    "javascript",
-    "front-end",
-    "web"
-  ],
-  "scripts": {
-    "build": "npm run build:css && npm run build:js",
-    "build:css": "postcss src/index.css -o dist/viewer.css --no-map",
-    "build:js": "rollup -c",
-    "clear": "del-cli dist",
-    "codecov": "cat coverage/lcov.info | codecov",
-    "compress": "npm run compress:css && npm run compress:js",
-    "compress:css": "postcss dist/viewer.css -u cssnano -o dist/viewer.min.css --no-map",
-    "compress:js": "uglifyjs dist/viewer.js -o dist/viewer.min.js -c -m --comments /^!/",
-    "copy": "cpy dist/viewer.css docs/css",
-    "lint": "npm run lint:js && npm run lint:css",
-    "lint:js": "eslint src test *.js --fix",
-    "lint:css": "stylelint {src,docs,examples}/**/*.{css,scss,html} --fix",
-    "release": "npm run clear && npm run lint && npm run build && npm run compress && npm run copy && npm test",
-    "start": "npm-run-all --parallel watch:*",
-    "test": "cross-env NODE_ENV=test karma start test/karma.conf.js",
-    "watch:css": "postcss src/index.css -o docs/css/viewer.css -m -w",
-    "watch:js": "rollup -c -m -w"
+  "bugs": {
+    "url": "https://github.com/fengyuanchen/viewerjs/issues"
   },
+  "dependencies": {},
+  "description": "JavaScript image viewer.",
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
@@ -90,5 +88,66 @@
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^2.0.0",
     "uglify-js": "^3.4.9"
-  }
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 28,
+    "integrity": "sha512-FBO2pN5XKx2yYpfZpQFSI89GhN4PvIhI2gCyahTsLzIUQzKIIRTQyAOMG5Dey7rgMMGU+JsmpfL2q/eARiB7Dg==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcDMp4CRA9TVsSAnZWagAACKwP+gIhUt2pfSrJOfLw/XkV\nHwHgDVU/gRNgrhJLqBs7r4Gob6NxNyJyRu9OTagDeqtYeRVSXFF+LXezAxeG\nGGU8b3drgz2cvqE6z5NEWo+jwP1u7KSazumGxV67DnxdNF49PKJbxpCBMRTS\nVsrFMTuLPfMl4VCB/UbjadmhWz0XGIPSnXtly2KSYqDqHPwG0PakwIxja6Ne\n626o4kSLvSUZgE2uYkVnfzIwCC9Ku8zfkmdDboDcQCvPkOqiT6ZxVnIIgYU1\na0I3a5oEoiiEN1HnJH9wyDfEGh3+/AXmRRe5ICDxeEQVx2I4IJsE5l3YOcIs\nFQgtXLX170yWB8mZu/NGHUB+NXA4A9dfx4TZgUypa1sDpZgH02tg1QP9UAHC\n5V/8CCdSGXi36zI3KLHHHZjSGScjy0ny5671dC02UWDY0eSLVlWhjUb66DIC\nacYo/k4S+FyyzjppFtYRIjq5vhQ66USQmjpK+6pH9fdIILiqlcwSBq3BV1OH\nE9s+px0Zs9RdUZq5EYorpv56L/fQsgJrG0tzTj33uxUCbnDSFDrYPBLAdzam\n8yP6ztm3xlavwLCtfUlZMFGqRh8rDI4IzItheD5ATD7/XsIP6O+rrjv9DL5Y\npLSNxxC1G+9cdInFyn6D7bXJnobEH34QYzRSxlmeBnzpL2+Su88zINTy6Nzf\ndFm9\r\n=ZTix\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "dcb216372f0c405fcab15bc4224b47f4271e592a",
+    "tarball": "https://registry.npmjs.org/viewerjs/-/viewerjs-1.3.1.tgz",
+    "unpackedSize": 476162
+  },
+  "gitHead": "2109d522f55d56dd9805770cba1f7bbf8d4643eb",
+  "homepage": "https://fengyuanchen.github.io/viewerjs",
+  "keywords": [
+    "image",
+    "viewer",
+    "viewerjs",
+    "viewer.js",
+    "html",
+    "css",
+    "javascript",
+    "front-end",
+    "web"
+  ],
+  "license": "MIT",
+  "main": "dist/viewer.common.js",
+  "maintainers": [
+    {
+      "email": "chenfengyuan@outlook.com",
+      "name": "chenfengyuan"
+    }
+  ],
+  "module": "dist/viewer.esm.js",
+  "name": "viewerjs",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengyuanchen/viewerjs.git"
+  },
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "postcss src/index.css -o dist/viewer.css --no-map",
+    "build:js": "rollup -c",
+    "clear": "del-cli dist",
+    "codecov": "cat coverage/lcov.info | codecov",
+    "compress": "npm run compress:css && npm run compress:js",
+    "compress:css": "postcss dist/viewer.css -u cssnano -o dist/viewer.min.css --no-map",
+    "compress:js": "uglifyjs dist/viewer.js -o dist/viewer.min.js -c -m --comments /^!/",
+    "copy": "cpy dist/viewer.css docs/css",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:css": "stylelint {src,docs,examples}/**/*.{css,scss,html} --fix",
+    "lint:js": "eslint src test *.js --fix",
+    "release": "npm run clear && npm run lint && npm run build && npm run compress && npm run copy && npm test",
+    "start": "npm-run-all --parallel watch:*",
+    "test": "cross-env NODE_ENV=test karma start test/karma.conf.js",
+    "watch:css": "postcss src/index.css -o docs/css/viewer.css -m -w",
+    "watch:js": "rollup -c -m -w"
+  },
+  "style": "dist/viewer.css",
+  "types": "types/index.d.ts",
+  "unpkg": "dist/viewer.js",
+  "version": "1.3.1"
 }
