@@ -1811,7 +1811,7 @@
       var onViewed = function onViewed() {
         var imageData = _this.imageData;
         var render = Array.isArray(options.title) ? options.title[1] : options.title;
-        title.innerHTML = isFunction(render) ? render.call(_this, image, imageData) : "".concat(alt, " (").concat(imageData.naturalWidth, " \xD7 ").concat(imageData.naturalHeight, ")");
+        title.innerHTML = isFunction(render) ? render.call(_this, image, imageData) : "".concat(alt, "");
       };
 
       var onLoad;
